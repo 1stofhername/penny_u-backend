@@ -27,6 +27,15 @@ end
     )
 end
 
+10.times do 
+    Activity.create(
+        title: Faker::Book.title,
+        description: Faker::Lorem.paragraph(sentence_count: 2),
+        # type: Faker::Lorem.word,
+        community_id: rand(1..5)
+    )
+end
+
 # Seed your database here
 
 puts "✅ Done seeding!"

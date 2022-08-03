@@ -36,6 +36,13 @@ end
     )
 end
 
+10.times do
+    ActivitySub.create(
+        activity_id: rand(1..5),
+        user_id: rand(1..5)
+    )
+end
+
 # Seed your database here
 
 puts "✅ Done seeding!"

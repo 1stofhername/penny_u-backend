@@ -46,7 +46,7 @@ end
 5.times do
     Conversation.create(
         activity_id: rand(1..5),
-        user_id: rand(1..5)
+        message_id: rand(1..5)
         
     )
 end

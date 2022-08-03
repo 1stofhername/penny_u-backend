@@ -20,6 +20,13 @@ end
     )
 end
 
+10.times do
+    CommunitySub.create(
+        user_id: 1,
+        community_id: rand(1..10)
+    )
+end
+
 # Seed your database here
 
 puts "✅ Done seeding!"

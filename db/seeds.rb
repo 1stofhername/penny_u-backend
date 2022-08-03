@@ -10,6 +10,16 @@ puts "🌱 Seeding spices..."
     )
 end
 
+10.times do
+    Community.create(
+        title: Faker::Book.title,
+        description: Faker::Lorem.paragraph(sentence_count: 2),
+        category: Faker::Lorem.word,
+        user_id: rand(1..5)
+
+    )
+end
+
 # Seed your database here
 
 puts "✅ Done seeding!"

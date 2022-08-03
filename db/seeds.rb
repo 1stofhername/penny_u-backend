@@ -45,14 +45,15 @@ end
 
 5.times do
     Conversation.create(
+        activity_id: rand(1..5),
         user_id: rand(1..5)
-        activity_id: rand(1..5)
+        
     )
 end
 
 30.times do
     Message.create(
-        user_id: rand(1..5)
+        user_id: rand(1..5),
         content: Faker::Lorem.paragraph(sentence_count: 2)
         
     )
